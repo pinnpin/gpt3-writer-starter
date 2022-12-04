@@ -11,6 +11,7 @@ body {
     place-content: center flex-start;
     align-items: center;
     background-color: rgb(0, 0, 0);
+    background-image: url("../assets/flannel.png");
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
@@ -40,7 +41,8 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    color: #FFF
+    color: rgb(255, 255, 255)
+    
 }
 
 .header-title {
@@ -51,20 +53,43 @@ body {
 .header-title h1 {
     width: 100%;
     font-weight: 700;
-    font-size: 72px;
-    letter-spacing: -4px;
+    font-size: 54px;
+    letter-spacing: -2px;
     line-height: 1.2em;
     text-align: center;
     margin: 0;
-}
-
-.header-subtitle h2 {
+    border-bottom: 1px solid rgb(0, 7, 98);
+    border-left: 1px solid rgb(0, 7, 98);
+    border-right: 1px solid rgb(0, 7, 98);
+    border-top: 1px solid rgb(0, 7, 98);
+    background-color: rgb(55, 91, 210);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  .header-subtitle h2 {
+    width: 100%;
+    font-weight: 700;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.4em;
-    color: rgba(255, 255, 255, 0.75);
-}
+    letter-spacing: 0px;
+    line-height: 1.2em;
+    text-align: center;
+    margin: 10;
+    border-bottom: 1px solid rgb(0, 7, 98);
+    border-left: 1px solid rgb(0, 7, 98);
+    border-right: 1px solid rgb(0, 7, 98);
+    border-top: 1px solid rgb(0, 7, 98);
+    background-color: rgb(55, 91, 210);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  
 
 .prompt-container {
     place-content: flex-end center;
@@ -80,14 +105,14 @@ body {
 
 .prompt-box {
     border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgb(255, 255, 255);
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgb(255, 255, 255);
     border-radius: 16px;
     display: flex;
     flex: 0 0 auto;
@@ -108,7 +133,7 @@ body {
     letter-spacing: 0px;
     line-height: 1.6em;
     text-align: start;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform: none;
 }
@@ -119,7 +144,7 @@ textarea {
 
 
 .prompt-box:focus {
-    border-color:rgba(255, 255, 255, 0.75)
+    border-color:rgb(55, 91, 210)
 }
 
 
@@ -148,7 +173,7 @@ textarea {
 }
 
 .key-stroke p {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgb(55, 91, 210);
     flex: 0 0 auto;
     height: auto;
     position: relative;
@@ -172,7 +197,7 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    background-color: rgb(55, 91, 210);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -202,6 +227,16 @@ textarea {
     margin: 0;
 }
 
+.generate img {
+    width: 24px;
+    height: 24px;
+    image-rendering: pixelated;
+    flex-shrink: 0;
+    fill: black;
+    color: black;
+    transform: none;
+}
+
 .loading {
     opacity: 0.7;
     cursor: default;
@@ -227,7 +262,6 @@ textarea {
     border-top-width: 1px;
     background-color: rgb(0, 0, 0);
     border-radius: 54.3478% / 238.095%;
-    filter: grayscale(1);
     transform: none;
     transform-origin: 50% 50% 0px;
     font-size: 14px;
@@ -245,8 +279,8 @@ textarea {
 }
 
 .badge img {
-    width: 21px;
-    height: 17px;
+    width: 27px;
+    height: 27px;
     image-rendering: pixelated;
     flex-shrink: 0;
     fill: black;
@@ -323,7 +357,18 @@ textarea {
 .output-content p {
     text-align: center;
     white-space: pre-line;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.749);
+    border-bottom-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    place-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    display: flex;
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
